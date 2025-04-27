@@ -3,6 +3,8 @@
 ## Overview
 This mini-project investigates **how sampling behavior differs between a GAN (Generative Adversarial Network)** and an **Autoregressive (AR) model** when generating sequences. It focuses on understanding where randomness is injected during sampling and how it impacts the **diversity** and **sharpness** of the generated samples.
 
+Understanding where and how randomness is injected during sampling is critical for designing generative models suited to different tasks. For applications like video generation, scene simulation, or sequential decision-making, the balance between maintaining global coherence (smooth motion, consistent structure) and allowing local variability (natural randomness, diverse details) is essential. Knowing whether a model’s sampling strategy introduces global or step-wise randomness helps choose the right architecture to match the task’s requirements for stability, diversity, and control.
+
 We conducted simple experiments by training a tiny GAN generator and a tiny Autoregressive model on synthetic data, sampling from both, and visualizing the results.
 
 ---
