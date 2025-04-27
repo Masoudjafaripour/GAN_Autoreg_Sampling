@@ -45,9 +45,8 @@ We conducted simple experiments by training a tiny GAN generator and a tiny Auto
 
 Below is the visualization (attached `plot.png`):
 
-```plaintext
 ![GAN vs Autoregressive Sampling](plot.png)
-```
+
 
 - **Top Row (GAN Samples):**
   - Smooth variations.
