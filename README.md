@@ -19,9 +19,9 @@ We conducted simple experiments by training a tiny GAN generator and a tiny Auto
 
 ### 1. GAN Generator
 - **Architecture:** Simple feedforward MLP.
-- **Input:** Random latent vector \( z \sim \mathcal{N}(0,1) \).
+- **Input:** Random latent vector z ~ N(0,1).
 - **Output:** Full sequence (length 10) generated in **one shot**.
-- **Sampling:** Diversity comes from sampling different latent vectors \( z \).
+- **Sampling:** Diversity comes from sampling different latent vectors z.
 
 ### 2. Autoregressive Model
 - **Architecture:** GRU (Gated Recurrent Unit) followed by a linear output layer.
@@ -34,7 +34,7 @@ We conducted simple experiments by training a tiny GAN generator and a tiny Auto
 ## Sampling Process
 
 - **GAN Sampling:**
-  1. Sample a random \( z \) once.
+  1. Sample a random z once.
   2. Generate the full sequence immediately.
 
 - **Autoregressive Sampling:**
@@ -66,7 +66,7 @@ Below is the visualization (attached `plot.png`):
 
 | Aspect | GAN | Autoregressive |
 |:------:|:---:|:--------------:|
-| Randomness injection | Once globally (latent \( z \)) | Step-by-step (token-by-token) |
+| Randomness injection | Once globally (latent z ~ N(0,1)) | Step-by-step (token-by-token) |
 | Diversity | Global variability | Local variability at each token |
 | Smoothness | High (continuous values) | Low (binary sharpness) |
 | Generation style | Whole sequence at once | Sequential prediction |
